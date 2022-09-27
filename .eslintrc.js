@@ -1,6 +1,8 @@
 module.exports = {
   root: true,
   env: {
+    commonjs: true,
+    es6: true,
     node: true,
   },
   extends: [
@@ -12,7 +14,13 @@ module.exports = {
     parser: "@babel/eslint-parser",
   },
   rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "no-extra-semi": "warn",
   },
 };

@@ -37,23 +37,23 @@
     <v-spacer></v-spacer>
     <div>
       <v-btn
-        class="mx-2"
+        class="mx-2 btn--mode"
         v-if="light"
         fab
         dark
         small
-        color="primary--text"
+        color="primary textfontColor--text"
         @click="darkMode()"
       >
         <v-icon dark> mdi-white-balance-sunny </v-icon>
       </v-btn>
       <v-btn
         v-if="night"
-        class="mx-2"
+        class="mx-2 btn--mode"
         fab
         dark
         small
-        color="primary--text"
+        color="primary textfontColor--text"
         @click="darkMode()"
       >
         <v-icon dark> mdi-weather-night </v-icon>
@@ -107,5 +107,9 @@ export default {
 
 .navbar--text {
   font-family: "Lato", sans-serif;
+}
+
+.btn--mode {
+  box-shadow: none;
 }
 </style>

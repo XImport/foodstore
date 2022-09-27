@@ -3,10 +3,8 @@
     <v-carousel
       v-model="model"
       hide-delimiter-background
-      show-arrows-on-
-      progress
-      progress-color="pink"
       touch
+      show-arrows-on-hover
     >
       <v-carousel-item v-for="(item, i) in items" :key="i">
         <v-img
